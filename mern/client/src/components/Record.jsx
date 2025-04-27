@@ -60,7 +60,7 @@ export default function Record() {
       } else {
         // if we are updating a record we will PATCH to /record/:id.
         response = await fetch(`http://localhost:5050/record/${params.id}`, {
-          method: "PATCH",
+          method: "PUT",
           headers: {
             "Content-Type": "application/json",
           },
